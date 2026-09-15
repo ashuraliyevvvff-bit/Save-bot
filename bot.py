@@ -105,6 +105,7 @@ async def process_yt_download(callback: CallbackQuery):
 
 async def main():
     print("Bot ishga tushdi...")
+    await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
